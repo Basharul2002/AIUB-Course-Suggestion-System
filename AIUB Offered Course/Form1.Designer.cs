@@ -1,4 +1,4 @@
-﻿namespace AIUB_Offered_Course
+namespace AIUB_Offered_Course
 {
     partial class CourseSolution
     {
@@ -46,46 +46,32 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CourseSolution));
             this.parent_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.offered_courses_panel = new Guna.UI2.WinForms.Guna2Panel();
             this.recomended_courses_panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.eee_elective_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.major_computer_engineering_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.elective4_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.major_ce_courseType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.major_computer_engineering_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.major_compitutional_theory_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.elective4_courses_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.elective3_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.major_ct_courseType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.major_compitutional_theory_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.major_software_engineering_datgridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.elective3_courses_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.elective2_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.major_se_courseType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.major_software_engineering_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.major_information_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.elective2_courses_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.elective1_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.major_information_course = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.major_information_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.elective1_courses_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.elective_courses_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.offered_core_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.core_courses_datagridview = new Guna.UI2.WinForms.Guna2DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.core_courses_label = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -125,13 +111,11 @@
             this.parent_panel.SuspendLayout();
             this.offered_courses_panel.SuspendLayout();
             this.recomended_courses_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eee_elective_courses_datagridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_computer_engineering_datagridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_compitutional_theory_datagridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_software_engineering_datgridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_information_datagridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.offered_core_courses_datagridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective4_courses_datagridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective3_courses_datagridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective2_courses_datagridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective1_courses_datagridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.core_courses_datagridview)).BeginInit();
             this.guna2Panel6.SuspendLayout();
             this.rightside_initial_state_panel.SuspendLayout();
             this.congratulation_panel.SuspendLayout();
@@ -178,19 +162,16 @@
             // recomended_courses_panel
             // 
             this.recomended_courses_panel.AutoScroll = true;
-            this.recomended_courses_panel.Controls.Add(this.guna2DataGridView1);
-            this.recomended_courses_panel.Controls.Add(this.guna2HtmlLabel2);
-            this.recomended_courses_panel.Controls.Add(this.eee_elective_courses_datagridview);
-            this.recomended_courses_panel.Controls.Add(this.major_computer_engineering_datagridview);
-            this.recomended_courses_panel.Controls.Add(this.major_computer_engineering_label);
-            this.recomended_courses_panel.Controls.Add(this.major_compitutional_theory_datagridview);
-            this.recomended_courses_panel.Controls.Add(this.major_compitutional_theory_label);
-            this.recomended_courses_panel.Controls.Add(this.major_software_engineering_datgridview);
-            this.recomended_courses_panel.Controls.Add(this.major_software_engineering_label);
-            this.recomended_courses_panel.Controls.Add(this.major_information_datagridview);
-            this.recomended_courses_panel.Controls.Add(this.major_information_label);
+            this.recomended_courses_panel.Controls.Add(this.elective4_courses_datagridview);
+            this.recomended_courses_panel.Controls.Add(this.elective4_courses_label);
+            this.recomended_courses_panel.Controls.Add(this.elective3_courses_datagridview);
+            this.recomended_courses_panel.Controls.Add(this.elective3_courses_label);
+            this.recomended_courses_panel.Controls.Add(this.elective2_courses_datagridview);
+            this.recomended_courses_panel.Controls.Add(this.elective2_courses_label);
+            this.recomended_courses_panel.Controls.Add(this.elective1_courses_datagridview);
+            this.recomended_courses_panel.Controls.Add(this.elective1_courses_label);
             this.recomended_courses_panel.Controls.Add(this.elective_courses_label);
-            this.recomended_courses_panel.Controls.Add(this.offered_core_courses_datagridview);
+            this.recomended_courses_panel.Controls.Add(this.core_courses_datagridview);
             this.recomended_courses_panel.Controls.Add(this.core_courses_label);
             this.recomended_courses_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.recomended_courses_panel.Location = new System.Drawing.Point(0, 65);
@@ -199,14 +180,14 @@
             this.recomended_courses_panel.TabIndex = 10;
             this.recomended_courses_panel.Visible = false;
             // 
-            // guna2DataGridView1
+            // elective4_courses_datagridview
             // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
+            this.elective4_courses_datagridview.AllowUserToAddRows = false;
+            this.elective4_courses_datagridview.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.elective4_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.elective4_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.elective4_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -214,13 +195,13 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 17;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15});
+            this.elective4_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.elective4_courses_datagridview.ColumnHeadersHeight = 17;
+            this.elective4_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective4_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.major_ce_courseType});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,210 +209,37 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 817);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(475, 123);
-            this.guna2DataGridView1.TabIndex = 17;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 17;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn13.FillWeight = 240.8579F;
-            this.dataGridViewTextBoxColumn13.HeaderText = "Course Name";
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            this.dataGridViewTextBoxColumn13.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.FillWeight = 30.45686F;
-            this.dataGridViewTextBoxColumn14.HeaderText = "Credit";
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            this.dataGridViewTextBoxColumn14.ReadOnly = true;
-            this.dataGridViewTextBoxColumn14.Width = 58;
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.HeaderText = "Course Type";
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            this.dataGridViewTextBoxColumn15.ReadOnly = true;
-            this.dataGridViewTextBoxColumn15.Width = 91;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Nirmala UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(0, 793);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(198, 24);
-            this.guna2HtmlLabel2.TabIndex = 16;
-            this.guna2HtmlLabel2.Text = "\nMajor in Computer Engineering";
-            this.guna2HtmlLabel2.Visible = false;
-            // 
-            // eee_elective_courses_datagridview
-            // 
-            this.eee_elective_courses_datagridview.AllowUserToAddRows = false;
-            this.eee_elective_courses_datagridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.eee_elective_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.eee_elective_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.eee_elective_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.eee_elective_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.eee_elective_courses_datagridview.ColumnHeadersHeight = 17;
-            this.eee_elective_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.eee_elective_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn11,
-            this.dataGridViewTextBoxColumn12});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.eee_elective_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle6;
-            this.eee_elective_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.eee_elective_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.eee_elective_courses_datagridview.Location = new System.Drawing.Point(0, 670);
-            this.eee_elective_courses_datagridview.Name = "eee_elective_courses_datagridview";
-            this.eee_elective_courses_datagridview.ReadOnly = true;
-            this.eee_elective_courses_datagridview.RowHeadersVisible = false;
-            this.eee_elective_courses_datagridview.Size = new System.Drawing.Size(475, 123);
-            this.eee_elective_courses_datagridview.TabIndex = 15;
-            this.eee_elective_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.eee_elective_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.eee_elective_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.eee_elective_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.eee_elective_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.eee_elective_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.eee_elective_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.eee_elective_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.eee_elective_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.eee_elective_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eee_elective_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.eee_elective_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.eee_elective_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
-            this.eee_elective_courses_datagridview.ThemeStyle.ReadOnly = true;
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.eee_elective_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.eee_elective_courses_datagridview.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn11.FillWeight = 240.8579F;
-            this.dataGridViewTextBoxColumn11.HeaderText = "Course Name";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.FillWeight = 30.45686F;
-            this.dataGridViewTextBoxColumn12.HeaderText = "Credit";
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.ReadOnly = true;
-            this.dataGridViewTextBoxColumn12.Width = 58;
-            // 
-            // major_computer_engineering_datagridview
-            // 
-            this.major_computer_engineering_datagridview.AllowUserToAddRows = false;
-            this.major_computer_engineering_datagridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.major_computer_engineering_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.major_computer_engineering_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.major_computer_engineering_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.major_computer_engineering_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.major_computer_engineering_datagridview.ColumnHeadersHeight = 17;
-            this.major_computer_engineering_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_computer_engineering_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.major_ce_courseType});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.major_computer_engineering_datagridview.DefaultCellStyle = dataGridViewCellStyle9;
-            this.major_computer_engineering_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_computer_engineering_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_computer_engineering_datagridview.Location = new System.Drawing.Point(0, 547);
-            this.major_computer_engineering_datagridview.Name = "major_computer_engineering_datagridview";
-            this.major_computer_engineering_datagridview.ReadOnly = true;
-            this.major_computer_engineering_datagridview.RowHeadersVisible = false;
-            this.major_computer_engineering_datagridview.Size = new System.Drawing.Size(475, 123);
-            this.major_computer_engineering_datagridview.TabIndex = 13;
-            this.major_computer_engineering_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_computer_engineering_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.major_computer_engineering_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.major_computer_engineering_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.major_computer_engineering_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.major_computer_engineering_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.major_computer_engineering_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_computer_engineering_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.major_computer_engineering_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.major_computer_engineering_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_computer_engineering_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.major_computer_engineering_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_computer_engineering_datagridview.ThemeStyle.HeaderStyle.Height = 17;
-            this.major_computer_engineering_datagridview.ThemeStyle.ReadOnly = true;
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.Height = 22;
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_computer_engineering_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_computer_engineering_datagridview.Visible = false;
+            this.elective4_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle3;
+            this.elective4_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective4_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective4_courses_datagridview.Location = new System.Drawing.Point(0, 542);
+            this.elective4_courses_datagridview.Name = "elective4_courses_datagridview";
+            this.elective4_courses_datagridview.ReadOnly = true;
+            this.elective4_courses_datagridview.RowHeadersVisible = false;
+            this.elective4_courses_datagridview.Size = new System.Drawing.Size(475, 123);
+            this.elective4_courses_datagridview.TabIndex = 13;
+            this.elective4_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective4_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.elective4_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.elective4_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.elective4_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.elective4_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.elective4_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective4_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.elective4_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.elective4_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective4_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.elective4_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective4_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
+            this.elective4_courses_datagridview.ThemeStyle.ReadOnly = true;
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective4_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective4_courses_datagridview.Visible = false;
             // 
             // dataGridViewTextBoxColumn9
             // 
@@ -456,79 +264,79 @@
             this.major_ce_courseType.ReadOnly = true;
             this.major_ce_courseType.Width = 91;
             // 
-            // major_computer_engineering_label
+            // elective4_courses_label
             // 
-            this.major_computer_engineering_label.BackColor = System.Drawing.Color.Transparent;
-            this.major_computer_engineering_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_computer_engineering_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.major_computer_engineering_label.Location = new System.Drawing.Point(0, 523);
-            this.major_computer_engineering_label.Name = "major_computer_engineering_label";
-            this.major_computer_engineering_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.major_computer_engineering_label.Size = new System.Drawing.Size(198, 24);
-            this.major_computer_engineering_label.TabIndex = 12;
-            this.major_computer_engineering_label.Text = "\nMajor in Computer Engineering";
-            this.major_computer_engineering_label.Visible = false;
+            this.elective4_courses_label.BackColor = System.Drawing.Color.Transparent;
+            this.elective4_courses_label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective4_courses_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F);
+            this.elective4_courses_label.Location = new System.Drawing.Point(0, 523);
+            this.elective4_courses_label.Name = "elective4_courses_label";
+            this.elective4_courses_label.Size = new System.Drawing.Size(53, 19);
+            this.elective4_courses_label.TabIndex = 16;
+            this.elective4_courses_label.Text = "elective4";
             // 
-            // major_compitutional_theory_datagridview
+            // elective3_courses_datagridview
             // 
-            this.major_compitutional_theory_datagridview.AllowUserToAddRows = false;
-            this.major_compitutional_theory_datagridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.major_compitutional_theory_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.major_compitutional_theory_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.major_compitutional_theory_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.major_compitutional_theory_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.major_compitutional_theory_datagridview.ColumnHeadersHeight = 17;
-            this.major_compitutional_theory_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_compitutional_theory_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.elective3_courses_datagridview.AllowUserToAddRows = false;
+            this.elective3_courses_datagridview.AllowUserToDeleteRows = false;
+            this.elective3_courses_datagridview.AllowUserToResizeColumns = false;
+            this.elective3_courses_datagridview.AllowUserToResizeRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.elective3_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.elective3_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.elective3_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.elective3_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.elective3_courses_datagridview.ColumnHeadersHeight = 17;
+            this.elective3_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective3_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.major_ct_courseType});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.major_compitutional_theory_datagridview.DefaultCellStyle = dataGridViewCellStyle12;
-            this.major_compitutional_theory_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_compitutional_theory_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_compitutional_theory_datagridview.Location = new System.Drawing.Point(0, 388);
-            this.major_compitutional_theory_datagridview.Name = "major_compitutional_theory_datagridview";
-            this.major_compitutional_theory_datagridview.ReadOnly = true;
-            this.major_compitutional_theory_datagridview.RowHeadersVisible = false;
-            this.major_compitutional_theory_datagridview.Size = new System.Drawing.Size(475, 135);
-            this.major_compitutional_theory_datagridview.TabIndex = 11;
-            this.major_compitutional_theory_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_compitutional_theory_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.major_compitutional_theory_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.major_compitutional_theory_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.major_compitutional_theory_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.major_compitutional_theory_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.major_compitutional_theory_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_compitutional_theory_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.major_compitutional_theory_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.major_compitutional_theory_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_compitutional_theory_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.major_compitutional_theory_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_compitutional_theory_datagridview.ThemeStyle.HeaderStyle.Height = 17;
-            this.major_compitutional_theory_datagridview.ThemeStyle.ReadOnly = true;
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.Height = 22;
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_compitutional_theory_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_compitutional_theory_datagridview.Visible = false;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.elective3_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle6;
+            this.elective3_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective3_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective3_courses_datagridview.Location = new System.Drawing.Point(0, 388);
+            this.elective3_courses_datagridview.Name = "elective3_courses_datagridview";
+            this.elective3_courses_datagridview.ReadOnly = true;
+            this.elective3_courses_datagridview.RowHeadersVisible = false;
+            this.elective3_courses_datagridview.Size = new System.Drawing.Size(475, 135);
+            this.elective3_courses_datagridview.TabIndex = 11;
+            this.elective3_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective3_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.elective3_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.elective3_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.elective3_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.elective3_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.elective3_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective3_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.elective3_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.elective3_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective3_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.elective3_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective3_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
+            this.elective3_courses_datagridview.ThemeStyle.ReadOnly = true;
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective3_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective3_courses_datagridview.Visible = false;
             // 
             // dataGridViewTextBoxColumn7
             // 
@@ -553,80 +361,79 @@
             this.major_ct_courseType.ReadOnly = true;
             this.major_ct_courseType.Width = 91;
             // 
-            // major_compitutional_theory_label
+            // elective3_courses_label
             // 
-            this.major_compitutional_theory_label.BackColor = System.Drawing.Color.Transparent;
-            this.major_compitutional_theory_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_compitutional_theory_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.major_compitutional_theory_label.Location = new System.Drawing.Point(0, 364);
-            this.major_compitutional_theory_label.Margin = new System.Windows.Forms.Padding(3, 3, 3, 5);
-            this.major_compitutional_theory_label.Name = "major_compitutional_theory_label";
-            this.major_compitutional_theory_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.major_compitutional_theory_label.Size = new System.Drawing.Size(195, 24);
-            this.major_compitutional_theory_label.TabIndex = 10;
-            this.major_compitutional_theory_label.Text = "Major in Compitutional Theory";
-            this.major_compitutional_theory_label.Visible = false;
+            this.elective3_courses_label.BackColor = System.Drawing.Color.Transparent;
+            this.elective3_courses_label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective3_courses_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F);
+            this.elective3_courses_label.Location = new System.Drawing.Point(0, 364);
+            this.elective3_courses_label.Name = "elective3_courses_label";
+            this.elective3_courses_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.elective3_courses_label.Size = new System.Drawing.Size(57, 24);
+            this.elective3_courses_label.TabIndex = 17;
+            this.elective3_courses_label.Text = "Elective 3";
+            this.elective3_courses_label.Visible = false;
             // 
-            // major_software_engineering_datgridview
+            // elective2_courses_datagridview
             // 
-            this.major_software_engineering_datgridview.AllowUserToAddRows = false;
-            this.major_software_engineering_datgridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.major_software_engineering_datgridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.major_software_engineering_datgridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.major_software_engineering_datgridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.major_software_engineering_datgridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.major_software_engineering_datgridview.ColumnHeadersHeight = 17;
-            this.major_software_engineering_datgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_software_engineering_datgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.elective2_courses_datagridview.AllowUserToAddRows = false;
+            this.elective2_courses_datagridview.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.elective2_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.elective2_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.elective2_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.elective2_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.elective2_courses_datagridview.ColumnHeadersHeight = 17;
+            this.elective2_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective2_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6,
             this.major_se_courseType});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.major_software_engineering_datgridview.DefaultCellStyle = dataGridViewCellStyle15;
-            this.major_software_engineering_datgridview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_software_engineering_datgridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_software_engineering_datgridview.Location = new System.Drawing.Point(0, 240);
-            this.major_software_engineering_datgridview.Name = "major_software_engineering_datgridview";
-            this.major_software_engineering_datgridview.ReadOnly = true;
-            this.major_software_engineering_datgridview.RowHeadersVisible = false;
-            this.major_software_engineering_datgridview.Size = new System.Drawing.Size(475, 124);
-            this.major_software_engineering_datgridview.TabIndex = 9;
-            this.major_software_engineering_datgridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_software_engineering_datgridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.major_software_engineering_datgridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.major_software_engineering_datgridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.major_software_engineering_datgridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.major_software_engineering_datgridview.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.major_software_engineering_datgridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_software_engineering_datgridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.major_software_engineering_datgridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.major_software_engineering_datgridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_software_engineering_datgridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.major_software_engineering_datgridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_software_engineering_datgridview.ThemeStyle.HeaderStyle.Height = 17;
-            this.major_software_engineering_datgridview.ThemeStyle.ReadOnly = true;
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.Height = 22;
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_software_engineering_datgridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_software_engineering_datgridview.Visible = false;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.elective2_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle9;
+            this.elective2_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective2_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective2_courses_datagridview.Location = new System.Drawing.Point(0, 240);
+            this.elective2_courses_datagridview.Name = "elective2_courses_datagridview";
+            this.elective2_courses_datagridview.ReadOnly = true;
+            this.elective2_courses_datagridview.RowHeadersVisible = false;
+            this.elective2_courses_datagridview.Size = new System.Drawing.Size(475, 124);
+            this.elective2_courses_datagridview.TabIndex = 9;
+            this.elective2_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective2_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.elective2_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.elective2_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.elective2_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.elective2_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.elective2_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective2_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.elective2_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.elective2_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective2_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.elective2_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective2_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
+            this.elective2_courses_datagridview.ThemeStyle.ReadOnly = true;
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective2_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective2_courses_datagridview.Visible = false;
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -651,79 +458,79 @@
             this.major_se_courseType.ReadOnly = true;
             this.major_se_courseType.Width = 91;
             // 
-            // major_software_engineering_label
+            // elective2_courses_label
             // 
-            this.major_software_engineering_label.BackColor = System.Drawing.Color.Transparent;
-            this.major_software_engineering_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_software_engineering_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.major_software_engineering_label.Location = new System.Drawing.Point(0, 216);
-            this.major_software_engineering_label.Name = "major_software_engineering_label";
-            this.major_software_engineering_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.major_software_engineering_label.Size = new System.Drawing.Size(191, 24);
-            this.major_software_engineering_label.TabIndex = 8;
-            this.major_software_engineering_label.Text = "\r\n\r\nMajor in Software Engineering";
-            this.major_software_engineering_label.Visible = false;
+            this.elective2_courses_label.BackColor = System.Drawing.Color.Transparent;
+            this.elective2_courses_label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective2_courses_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F);
+            this.elective2_courses_label.Location = new System.Drawing.Point(0, 216);
+            this.elective2_courses_label.Name = "elective2_courses_label";
+            this.elective2_courses_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.elective2_courses_label.Size = new System.Drawing.Size(57, 24);
+            this.elective2_courses_label.TabIndex = 8;
+            this.elective2_courses_label.Text = "Elective 2";
+            this.elective2_courses_label.Visible = false;
             // 
-            // major_information_datagridview
+            // elective1_courses_datagridview
             // 
-            this.major_information_datagridview.AllowUserToAddRows = false;
-            this.major_information_datagridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.major_information_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            this.major_information_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.major_information_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.major_information_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            this.major_information_datagridview.ColumnHeadersHeight = 17;
-            this.major_information_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_information_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.elective1_courses_datagridview.AllowUserToAddRows = false;
+            this.elective1_courses_datagridview.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.elective1_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.elective1_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.elective1_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.elective1_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.elective1_courses_datagridview.ColumnHeadersHeight = 17;
+            this.elective1_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective1_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn4,
             this.major_information_course});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.major_information_datagridview.DefaultCellStyle = dataGridViewCellStyle18;
-            this.major_information_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_information_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_information_datagridview.Location = new System.Drawing.Point(0, 120);
-            this.major_information_datagridview.Name = "major_information_datagridview";
-            this.major_information_datagridview.ReadOnly = true;
-            this.major_information_datagridview.RowHeadersVisible = false;
-            this.major_information_datagridview.Size = new System.Drawing.Size(475, 96);
-            this.major_information_datagridview.TabIndex = 7;
-            this.major_information_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_information_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.major_information_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.major_information_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.major_information_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.major_information_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.major_information_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_information_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.major_information_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.major_information_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_information_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.major_information_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.major_information_datagridview.ThemeStyle.HeaderStyle.Height = 17;
-            this.major_information_datagridview.ThemeStyle.ReadOnly = true;
-            this.major_information_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.major_information_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.major_information_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.major_information_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_information_datagridview.ThemeStyle.RowsStyle.Height = 22;
-            this.major_information_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.major_information_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.major_information_datagridview.Visible = false;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.elective1_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle12;
+            this.elective1_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective1_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective1_courses_datagridview.Location = new System.Drawing.Point(0, 120);
+            this.elective1_courses_datagridview.Name = "elective1_courses_datagridview";
+            this.elective1_courses_datagridview.ReadOnly = true;
+            this.elective1_courses_datagridview.RowHeadersVisible = false;
+            this.elective1_courses_datagridview.Size = new System.Drawing.Size(475, 96);
+            this.elective1_courses_datagridview.TabIndex = 7;
+            this.elective1_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective1_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.elective1_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.elective1_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.elective1_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.elective1_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.elective1_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective1_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.elective1_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.elective1_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective1_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.elective1_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.elective1_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
+            this.elective1_courses_datagridview.ThemeStyle.ReadOnly = true;
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.elective1_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.elective1_courses_datagridview.Visible = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -748,18 +555,18 @@
             this.major_information_course.ReadOnly = true;
             this.major_information_course.Width = 91;
             // 
-            // major_information_label
+            // elective1_courses_label
             // 
-            this.major_information_label.BackColor = System.Drawing.Color.Transparent;
-            this.major_information_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.major_information_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F, System.Drawing.FontStyle.Bold);
-            this.major_information_label.Location = new System.Drawing.Point(0, 96);
-            this.major_information_label.Name = "major_information_label";
-            this.major_information_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.major_information_label.Size = new System.Drawing.Size(133, 24);
-            this.major_information_label.TabIndex = 6;
-            this.major_information_label.Text = "Major in Information";
-            this.major_information_label.Visible = false;
+            this.elective1_courses_label.BackColor = System.Drawing.Color.Transparent;
+            this.elective1_courses_label.Dock = System.Windows.Forms.DockStyle.Top;
+            this.elective1_courses_label.Font = new System.Drawing.Font("Nirmala UI", 9.5F);
+            this.elective1_courses_label.Location = new System.Drawing.Point(0, 96);
+            this.elective1_courses_label.Name = "elective1_courses_label";
+            this.elective1_courses_label.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
+            this.elective1_courses_label.Size = new System.Drawing.Size(57, 24);
+            this.elective1_courses_label.TabIndex = 6;
+            this.elective1_courses_label.Text = "Elective 1";
+            this.elective1_courses_label.Visible = false;
             // 
             // elective_courses_label
             // 
@@ -775,65 +582,65 @@
             this.elective_courses_label.Text = "\r\n\r\nElective Courses";
             this.elective_courses_label.Visible = false;
             // 
-            // offered_core_courses_datagridview
+            // core_courses_datagridview
             // 
-            this.offered_core_courses_datagridview.AllowUserToAddRows = false;
-            this.offered_core_courses_datagridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
-            this.offered_core_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
-            this.offered_core_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.offered_core_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.offered_core_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
-            this.offered_core_courses_datagridview.ColumnHeadersHeight = 17;
-            this.offered_core_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.offered_core_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.core_courses_datagridview.AllowUserToAddRows = false;
+            this.core_courses_datagridview.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.core_courses_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            this.core_courses_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.core_courses_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.core_courses_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.core_courses_datagridview.ColumnHeadersHeight = 17;
+            this.core_courses_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.core_courses_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3});
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.offered_core_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle21;
-            this.offered_core_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
-            this.offered_core_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.offered_core_courses_datagridview.Location = new System.Drawing.Point(0, 23);
-            this.offered_core_courses_datagridview.Name = "offered_core_courses_datagridview";
-            this.offered_core_courses_datagridview.ReadOnly = true;
-            this.offered_core_courses_datagridview.RowHeadersVisible = false;
-            this.offered_core_courses_datagridview.Size = new System.Drawing.Size(475, 45);
-            this.offered_core_courses_datagridview.TabIndex = 4;
-            this.offered_core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.offered_core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.offered_core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.offered_core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.offered_core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.offered_core_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.offered_core_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.offered_core_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.offered_core_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.offered_core_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.offered_core_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.offered_core_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.offered_core_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
-            this.offered_core_courses_datagridview.ThemeStyle.ReadOnly = true;
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.offered_core_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.offered_core_courses_datagridview.Visible = false;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.core_courses_datagridview.DefaultCellStyle = dataGridViewCellStyle15;
+            this.core_courses_datagridview.Dock = System.Windows.Forms.DockStyle.Top;
+            this.core_courses_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.core_courses_datagridview.Location = new System.Drawing.Point(0, 23);
+            this.core_courses_datagridview.Name = "core_courses_datagridview";
+            this.core_courses_datagridview.ReadOnly = true;
+            this.core_courses_datagridview.RowHeadersVisible = false;
+            this.core_courses_datagridview.Size = new System.Drawing.Size(475, 45);
+            this.core_courses_datagridview.TabIndex = 4;
+            this.core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.core_courses_datagridview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.core_courses_datagridview.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.core_courses_datagridview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.core_courses_datagridview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.core_courses_datagridview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.core_courses_datagridview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.core_courses_datagridview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.core_courses_datagridview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.core_courses_datagridview.ThemeStyle.HeaderStyle.Height = 17;
+            this.core_courses_datagridview.ThemeStyle.ReadOnly = true;
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.Height = 22;
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.core_courses_datagridview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.core_courses_datagridview.Visible = false;
             // 
             // dataGridViewTextBoxColumn2
             // 
@@ -947,32 +754,32 @@
             // 
             this.course_datagridview.AllowUserToAddRows = false;
             this.course_datagridview.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.course_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.course_datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.course_datagridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.course_datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.course_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.course_datagridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.course_datagridview.ColumnHeadersHeight = 17;
             this.course_datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.course_datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.CourseName,
             this.Credit});
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.course_datagridview.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.course_datagridview.DefaultCellStyle = dataGridViewCellStyle18;
             this.course_datagridview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.course_datagridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.course_datagridview.Location = new System.Drawing.Point(306, 158);
@@ -1206,7 +1013,8 @@
             this.department_combobox.Items.AddRange(new object[] {
             "None",
             "CSE",
-            "EEE"});
+            "EEE",
+            "ENG"});
             this.department_combobox.Location = new System.Drawing.Point(198, 92);
             this.department_combobox.Margin = new System.Windows.Forms.Padding(0);
             this.department_combobox.Name = "department_combobox";
@@ -1346,13 +1154,11 @@
             this.offered_courses_panel.ResumeLayout(false);
             this.recomended_courses_panel.ResumeLayout(false);
             this.recomended_courses_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eee_elective_courses_datagridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_computer_engineering_datagridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_compitutional_theory_datagridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_software_engineering_datgridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.major_information_datagridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.offered_core_courses_datagridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective4_courses_datagridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective3_courses_datagridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective2_courses_datagridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elective1_courses_datagridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.core_courses_datagridview)).EndInit();
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
             this.rightside_initial_state_panel.ResumeLayout(false);
@@ -1414,21 +1220,14 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2Panel recomended_courses_panel;
         private Guna.UI2.WinForms.Guna2HtmlLabel core_courses_label;
-        private Guna.UI2.WinForms.Guna2DataGridView offered_core_courses_datagridview;
+        private Guna.UI2.WinForms.Guna2DataGridView core_courses_datagridview;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private Guna.UI2.WinForms.Guna2DataGridView major_information_datagridview;
-        private Guna.UI2.WinForms.Guna2HtmlLabel major_information_label;
+        private Guna.UI2.WinForms.Guna2DataGridView elective1_courses_datagridview;
         private Guna.UI2.WinForms.Guna2HtmlLabel elective_courses_label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel major_software_engineering_label;
-        private Guna.UI2.WinForms.Guna2HtmlLabel major_compitutional_theory_label;
-        private Guna.UI2.WinForms.Guna2DataGridView major_software_engineering_datgridview;
-        private Guna.UI2.WinForms.Guna2DataGridView major_computer_engineering_datagridview;
-        private Guna.UI2.WinForms.Guna2HtmlLabel major_computer_engineering_label;
-        private Guna.UI2.WinForms.Guna2DataGridView major_compitutional_theory_datagridview;
-        private Guna.UI2.WinForms.Guna2DataGridView eee_elective_courses_datagridview;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private Guna.UI2.WinForms.Guna2DataGridView elective2_courses_datagridview;
+        private Guna.UI2.WinForms.Guna2DataGridView elective4_courses_datagridview;
+        private Guna.UI2.WinForms.Guna2DataGridView elective3_courses_datagridview;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn major_se_courseType;
@@ -1441,10 +1240,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn major_information_course;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel elective2_courses_label;
+        private Guna.UI2.WinForms.Guna2HtmlLabel elective1_courses_label;
+        private Guna.UI2.WinForms.Guna2HtmlLabel elective4_courses_label;
+        private Guna.UI2.WinForms.Guna2HtmlLabel elective3_courses_label;
     }
 }
+
