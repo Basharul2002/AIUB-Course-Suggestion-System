@@ -1,4 +1,4 @@
-﻿using Guna.UI2.WinForms;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -78,6 +78,8 @@ namespace AIUB_Offered_Course
                 CseCourses();
             else if (departmentNumber == 2)
                 EeeCourses();
+            else if (departmentNumber == 3)
+                EnglishCourses();
         }
 
         // For comeback department choosing another panel 
@@ -342,103 +344,105 @@ namespace AIUB_Offered_Course
             allCourses = new List<Course>
             {
                 // Semester 1
-                new Course { Name = "ENGLISH READING SKILLS & PUBLIC SPEAKING", Prerequisites = new HashSet<int>(), CourseCredit = 3}, //1
-                new Course { Name = "BANGLA LANGUAGE AND LITERATURE", Prerequisites = new HashSet<int>(), CourseCredit = 3}, // 2
-                new Course { Name = "FOUNDATIONS OF SOCIOLOGY", Prerequisites= new HashSet<int>(), CourseCredit = 3}, // 3
-                new Course { Name = "COMPUTER FUNDAMENTALS", Prerequisites = new HashSet<int>(), CourseCredit = 3}, // 4
-                new Course { Name = "INTRODUCTION TO ENGLISH LITERATURE", Prerequisites = new HashSet<int>(), CourseCredit = 3}, // 5
-                new Course { Name = "INTRODUCTION TO LINGUISTICS", Prerequisites = new HashSet<int>(), CourseCredit = 3}, // 6
+                new Course { Name = "ENGLISH READING SKILLS & PUBLIC SPEAKING", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, //1
+                new Course { Name = "BANGLA LANGUAGE AND LITERATURE", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 2
+                new Course { Name = "FOUNDATIONS OF SOCIOLOGY", Prerequisites= new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 3
+                new Course { Name = "COMPUTER FUNDAMENTALS", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 4
+                new Course { Name = "INTRODUCTION TO ENGLISH LITERATURE", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 5
+                new Course { Name = "INTRODUCTION TO LINGUISTICS", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 6
 
 
                 // Semester 2
-                new Course { Name = "ENGLISH WRITING", Prerequisites = new HashSet<int> {1}, CourseCredit = 3}, // 7
-                new Course { Name = "ENGLISH WRITING", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 8
-                new Course { Name = "HISTORY OF EMERGENCE OF BANGLADESH", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 9
-                new Course { Name = "APPRECIATION OF POETRY", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 10
-                new Course { Name = "FUNDAMENTALS OF ECONOMICS", Prerequisites = new HashSet<int> (), CourseCredit = 3 }, // 11
-                new Course { Name = "NATURAL SCIENCE", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 12
+                new Course { Name = "ENGLISH WRITING", Prerequisites = new HashSet<int> {1}, CourseCredit = 3, CourseType = 1}, // 7
+                new Course { Name = "ENGLISH WRITING", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 8
+                new Course { Name = "HISTORY OF EMERGENCE OF BANGLADESH", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 9
+                new Course { Name = "APPRECIATION OF POETRY", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 10
+                new Course { Name = "FUNDAMENTALS OF ECONOMICS", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 11
+                new Course { Name = "NATURAL SCIENCE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 12
 
 
                 // Semester 3
-                new Course { Name = "WRITING FOR ARTS AND SOCIAL SCIENCES", Prerequisites = new HashSet<int> {7}, CourseCredit = 3}, // 13
-                new Course { Name = "BANGLADESH STUDIES", Prerequisites = new HashSet<int> {9}, CourseCredit = 3}, // 14
-                new Course { Name = "ARTS AND AESTHETICS", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 15
-                new Course { Name = "STATISTICS FOR SOCIAL SCIENCE", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 16
-                new Course { Name = "HISTORY OF ENGLISH LANGUAGE", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 17
-                new Course { Name = "ELEMENTARY ACCOUNTING", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 18
+                new Course { Name = "WRITING FOR ARTS AND SOCIAL SCIENCES", Prerequisites = new HashSet<int> {7}, CourseCredit = 3, CourseType = 1}, // 13
+                new Course { Name = "BANGLADESH STUDIES", Prerequisites = new HashSet<int> {9}, CourseCredit = 3, CourseType = 1}, // 14
+                new Course { Name = "ARTS AND AESTHETICS", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 15
+                new Course { Name = "STATISTICS FOR SOCIAL SCIENCE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 16
+                new Course { Name = "HISTORY OF ENGLISH LANGUAGE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 17
+                new Course { Name = "ELEMENTARY ACCOUNTING", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 18
 
 
                 // Semester 4
-                new Course { Name = "APPRECIATION OF PROSE", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 19
-                new Course { Name = "CLASSROOM MANAGEMENT TECHNIQUES IN ELT", Prerequisites = new HashSet<int> {6}, CourseCredit = 3 }, //20
-                new Course { Name = "APPRECIATION OF DRAMA", Prerequisites = new HashSet<int> (), CourseCredit = 3 }, // 21
-                new Course { Name = "PROFESSIONAL ENGLISH", Prerequisites = new HashSet<int> {7}, CourseCredit = 3}, // 22
-                new Course { Name = "SOCIAL SCIENCE RESEARCH METHODOLOGY", Prerequisites = new HashSet<int> {16}, CourseCredit = 3 }, // 23
-                new Course { Name = "COGNITIVE AND SOCIAL PSYCHOLOGY", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 24
+                new Course { Name = "APPRECIATION OF PROSE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 19
+                new Course { Name = "CLASSROOM MANAGEMENT TECHNIQUES IN ELT", Prerequisites = new HashSet<int> {6}, CourseCredit = 3, CourseType = 1 }, //20
+                new Course { Name = "APPRECIATION OF DRAMA", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 21
+                new Course { Name = "PROFESSIONAL ENGLISH", Prerequisites = new HashSet<int> {7}, CourseCredit = 3, CourseType = 1}, // 22
+                new Course { Name = "SOCIAL SCIENCE RESEARCH METHODOLOGY", Prerequisites = new HashSet<int> {16}, CourseCredit = 3, CourseType = 1 }, // 23
+                new Course { Name = "COGNITIVE AND SOCIAL PSYCHOLOGY", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 24
 
 
                 // Semester 5
-                new Course { Name = "PHILOSOPHY AND ETHICS", Prerequisites = new HashSet<int> (), CourseCredit = 3}, //25
-                new Course { Name = "CLASSICAL LITERATURE", Prerequisites = new HashSet<int> {21}, CourseCredit = 3}, // 26
-                new Course { Name = "FIRST LANGUAGE DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3}, // 27
-                new Course { Name = "TEACHING GRAMMAR AND VOCABULARY", Prerequisites = new HashSet<int>(), CourseCredit = 3}, // 28
+                new Course { Name = "PHILOSOPHY AND ETHICS", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, //25
+                new Course { Name = "CLASSICAL LITERATURE", Prerequisites = new HashSet<int> {21}, CourseCredit = 3, CourseType = 1}, // 26
+                new Course { Name = "FIRST LANGUAGE DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 27
+                new Course { Name = "TEACHING GRAMMAR AND VOCABULARY", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 28
 
 
                 // Semester 6
-                new Course { Name = "PHONETICS AND PHONOLOGY", Prerequisites = new HashSet<int> {8}, CourseCredit = 3},
-                new Course { Name = "CONTEMPORARY SOUTH ASIAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3},
-                new Course { Name = "ELT APPROACHES AND METHODS", Prerequisites = new HashSet<int> {20}, CourseCredit = 3},
-                new Course { Name = "SOUTH ASIAN HISTORY AND DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3},
+                new Course { Name = "PHONETICS AND PHONOLOGY", Prerequisites = new HashSet<int> {8}, CourseCredit = 3, CourseType = 1},  // 29
+                new Course { Name = "CONTEMPORARY SOUTH ASIAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 30
+                new Course { Name = "ELT APPROACHES AND METHODS", Prerequisites = new HashSet<int> {20}, CourseCredit = 3, CourseType = 1}, // 31
+                new Course { Name = "SOUTH ASIAN HISTORY AND DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 32
 
 
                 // Semeseter 7
-                new Course { Name = "SHAKESPEARE", Prerequisites = new HashSet<int> (), CourseCredit = 3},
-                new Course { Name  = "LITERARY THEORY AND CRITICISM", Prerequisites = new HashSet<int>(), CourseCredit = 3},
-                new Course { Name = "SOCIOLINGUISTICS", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
+                new Course { Name = "SHAKESPEARE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1}, // 33
+                new Course { Name  = "LITERARY THEORY AND CRITICISM", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // 34
+                new Course { Name = "SOCIOLINGUISTICS", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 35
 
 
                 // Semester 8
-                new Course { Name = "PROFESSIONAL DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "PROFESSIONAL DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "TEACHING PRACTICUM", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
+                new Course { Name = "PROFESSIONAL DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 36
+                new Course { Name = "PROFESSIONAL DEVELOPMENT", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 37
+                new Course { Name = "TEACHING PRACTICUM", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 38
 
 
                 // Elecetive
                 // Major in Linguistics & TESL
-                new Course { Name = "ENGLISH SYNTAX", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "SEMANTICS AND PRAGMATICS", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "DISCOURSE ANALYSIS", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "GLOBAL ENGLISHES", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "SECOND LANGUAGE ACQUISITION", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "BILINGUALISM", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "TECHNOLOGY IN LANGUAGE LEARNING", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "LANGUAGE TESTING", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "ENGLISH FOR SPECIFIC PURPOSES", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "TEACHING READING", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "TEACHING LISTENING AND SPEAKING", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "GLOBAL LANGUAGE", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "INDEPENDENT PROJECT", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
+                new Course { Name = "ENGLISH SYNTAX", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 2 }, // 39
+                new Course { Name = "SEMANTICS AND PRAGMATICS", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 2 }, // 40
+                new Course { Name = "DISCOURSE ANALYSIS", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 1 }, // 41
+                new Course { Name = "GLOBAL ENGLISHES", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 42
+                new Course { Name = "SECOND LANGUAGE ACQUISITION", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 43
+                new Course { Name = "BILINGUALISM", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 44
+                new Course { Name = "TECHNOLOGY IN LANGUAGE LEARNING", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 2}, // 45
+                new Course { Name = "LANGUAGE TESTING", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 46
+                new Course { Name = "ENGLISH FOR SPECIFIC PURPOSES", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 47
+                new Course { Name = "TEACHING READING", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 48
+                new Course { Name = "TEACHING LISTENING AND SPEAKING", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 49
+                new Course { Name = "GLOBAL LANGUAGE", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 50
+                new Course { Name = "INDEPENDENT PROJECT", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 2}, // 51
 
 
 
                 // Major In Literature
-                new Course { Name = "OLD AND MIDDLE ENGLISH LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "ROMANTIC POETRY", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "VICTORIAN LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "MODERN FICTION AND NON-FICTION", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "MODERN DRAMA AND POETRY", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "AMERICAN LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "AFRICAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "16TH AND 17TH CENTURY ENGLISH LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "TRANSLATION STUDIES", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "EUROPEAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "CARIBBEAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "TEACHING ENGLISH LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "BANGLADESHI LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "CREATIVE WRITING", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "GLOBAL LANGUAGES", Prerequisites = new HashSet<int> (), CourseCredit = 3 },
-                new Course { Name = "INDEPENDENT PROJECT", Prerequisites = new HashSet<int> (), CourseCredit = 3 }
+                new Course { Name = "OLD AND MIDDLE ENGLISH LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3 , CourseType = 3}, // 52
+                new Course { Name = "ROMANTIC POETRY", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 53
+                new Course { Name = "VICTORIAN LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 54
+                new Course { Name = "MODERN FICTION AND NON-FICTION", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 55
+                new Course { Name = "MODERN DRAMA AND POETRY", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 56
+                new Course { Name = "AMERICAN LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 57
+                new Course { Name = "AFRICAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 58
+                new Course { Name = "16TH AND 17TH CENTURY ENGLISH LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 59
+                new Course { Name = "TRANSLATION STUDIES", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 60
+                new Course { Name = "EUROPEAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3}, //61
+                new Course { Name = "CARIBBEAN LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 62
+                new Course { Name = "TEACHING ENGLISH LITERATURE", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 63
+                new Course { Name = "BANGLADESHI LITERATURE IN ENGLISH", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3}, // 64
+                new Course { Name = "CREATIVE WRITING", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 65
+                new Course { Name = "GLOBAL LANGUAGES", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 }, // 66
+                new Course { Name = "INDEPENDENT PROJECT", Prerequisites = new HashSet<int> (), CourseCredit = 3, CourseType = 3 } // 67
             };
+
+            PrintCourses(allCourses);
         }
 
         // Function to print available courses
@@ -453,8 +457,8 @@ namespace AIUB_Offered_Course
                 // Add a new row(Course ID, Name, Number of credit) to DataGridView for each course
                 course_datagridview.Rows.Add
                 (
-                    $"{i + 1}",
-                    $"{courses[i].Name} ",
+                    $"{i + 1}" ,
+                    $"{courses[i].Name} ", 
                     $"{courses[i].CourseCredit}"
                 );
             }
@@ -505,7 +509,7 @@ namespace AIUB_Offered_Course
                     else if (outOfRange)
                         course_number_warning_label.Text = "**Invalid Input**";
 
-                    offered_core_courses_datagridview.Rows.Clear();
+                    core_courses_datagridview.Rows.Clear();
                     course_number_warning_label.Visible = true;
                     DepartmentChoose();
 
@@ -546,7 +550,7 @@ namespace AIUB_Offered_Course
             }
             catch (Exception ex)
             {
-                // MessageBox.Show($"Function name is CourseDataUserInput and error: {ex.Message}");
+               // MessageBox.Show($"Function name is CourseDataUserInput and error: {ex.Message}");
                 course_number_warning_label.Text = "Duplicate Course IDs are Not Allowed";
                 course_number_warning_label.Visible = true;
             }
@@ -665,14 +669,14 @@ namespace AIUB_Offered_Course
             {
                 if (sequence[i] < sequence[i - 1])
                     return false;
-
+                
             }
             return true;
         }
 
         private bool IsValidCourseNumber(int number, int dept)
         {
-            return (dept == 1 && number <= 99) || (dept == 2 && number <= 74);
+            return (dept == 1 && number <= 99) || (dept == 2 && number <= 74) || (dept == 3 && number <= 67);
         }
 
         // Validate prerequisites for each inputted course
@@ -695,7 +699,9 @@ namespace AIUB_Offered_Course
                     }
 
                     // Check for "RESEARCH METHODOLOGY" course with less than 100 completed credits
-                    if ((course.Name == "RESEARCH METHODOLOGY" && totalCreditCompleted < 100) || (course.Name == "CAPSTONE PROJECT 1" && totalCreditCompleted < 105) || (course.Name == "INTERNSHIP" && totalCreditCompleted < 139))
+                    if ((course.Name == "RESEARCH METHODOLOGY" && totalCreditCompleted < 100)  || (course.Name == "INTERNSHIP" && totalCreditCompleted < 139) // CSE
+                        || (course.Name == "CAPSTONE PROJECT 1" && totalCreditCompleted < 105)  // EEE
+                        || (departmentNumber == 2 && (course.CourseType == 2 || course.CourseType == 3) && totalCreditCompleted < 60)) // English
                     {
                         mess = courseNum;
                         return false;
@@ -708,38 +714,120 @@ namespace AIUB_Offered_Course
         }
 
 
-        private void DataGridView()
+        private void SetupDataGridViews()
         {
-            // Clear existing rows in DataGridView
-            offered_core_courses_datagridview.Rows.Clear();
-            major_software_engineering_datgridview.Rows.Clear();
-            major_information_datagridview.Rows.Clear();
-            major_computer_engineering_datagridview.Rows.Clear();
-            major_compitutional_theory_datagridview.Rows.Clear();
-            eee_elective_courses_datagridview.Rows.Clear();
+            // Clear existing rows and columns in DataGridViews
+            ClearDataGridViews();
 
-            offered_core_courses_datagridview.Visible = false;
-            major_compitutional_theory_datagridview.Visible = false;
-            major_computer_engineering_datagridview.Visible = false;
-            major_information_datagridview.Visible = false;
-            major_software_engineering_datgridview.Visible = false;
-            eee_elective_courses_datagridview.Visible = false;
+            if (departmentNumber == 1)
+            {
+                SetupDataGridView(elective1_courses_datagridview, "<b>Major in Information</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective2_courses_datagridview, "<b>Major in Software Engineering</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective3_courses_datagridview, "<b>Major in Computational Theory</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective4_courses_datagridview, "<b>Major in Computer Engineering</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
+            }
+            else if (departmentNumber == 2)
+                SetupDataGridView(elective1_courses_datagridview, "", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+            
+            else if (departmentNumber == 3)
+            {
+                SetupDataGridView(elective1_courses_datagridview, "<b>Major in Linguistics & TESL</b>  <br>First Major: Complete any 10 courses in Linguistics & TESL <br> Second Major: Complete any 6 courses in Linguistics & TESL <br>Minor: Complete any FOUR 4 courses in Linguistics & TESL", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective2_courses_datagridview, "<b>Major In Literature</b> <br>First Major: Complete any 10 courses in Literature <br> Second Major: Complete any 6 courses in Literature <br>Minor: Complete any FOUR 4 courses in Literature", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+            }
 
+            
+            HideAllDataGridViews();
+        }
+
+        private void ClearDataGridViews()
+        {
+            core_courses_datagridview.Rows.Clear();
+            elective1_courses_datagridview.Columns.Clear();
+            elective2_courses_datagridview.Columns.Clear();
+            elective3_courses_datagridview.Columns.Clear();
+            elective4_courses_datagridview.Columns.Clear();
+            elective1_courses_datagridview.Rows.Clear();
+            elective2_courses_datagridview.Rows.Clear();
+            elective3_courses_datagridview.Rows.Clear();
+            elective4_courses_datagridview.Rows.Clear();
+        }
+
+        private void SetupDataGridView(DataGridView dgv, string labelText, int[] columnWidths, DataGridViewContentAlignment alignment)
+        {
+            // Add columns
+            dgv.Columns.Add("CourseName", "Course Name");
+            dgv.Columns.Add("CourseCredit", "Credit");
+            if (columnWidths.Length == 3)
+                dgv.Columns.Add("CourseType", "Course Type");
+            
+
+            // Set properties
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.Dock = DockStyle.Top;
+
+            // Set column widths
+            for (int i = 0; i < columnWidths.Length; i++)
+            {
+                dgv.Columns[i].Width = columnWidths[i];
+                if (i > 0) // Center align second and third columns
+                    dgv.Columns[i].DefaultCellStyle.Alignment = alignment;
+                
+            }
+
+            // Set header alignment
+            foreach (DataGridViewColumn column in dgv.Columns)
+            {
+                column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            }
+
+            // Set the label text
+            if (dgv == elective1_courses_datagridview)
+            {
+                elective1_courses_label.Text = labelText;
+                elective1_courses_label.AutoSize = true;
+            }
+            else if (dgv == elective2_courses_datagridview)
+            {
+                elective2_courses_label.Text = labelText;
+                elective2_courses_label.AutoSize = true;
+            }
+            else if (dgv == elective3_courses_datagridview)
+            {
+                elective3_courses_label.Text = labelText;
+                elective3_courses_label.AutoSize = true;
+            }
+            else if (dgv == elective4_courses_datagridview)
+            {
+                elective4_courses_label.Text = labelText;
+                elective4_courses_label.AutoSize = true;
+            }
+        }
+
+        private void HideAllDataGridViews()
+        {
             core_courses_label.Visible = false;
-            major_computer_engineering_label.Visible = false;
-            major_compitutional_theory_label.Visible = false;
-            major_information_label.Visible = false;
-            major_software_engineering_label.Visible = false;
+            elective1_courses_label.Visible = false;
+            elective2_courses_label.Visible = false;
+            elective3_courses_label.Visible = false;
+            elective4_courses_label.Visible = false;
             elective_courses_label.Visible = false;
 
+            core_courses_datagridview.Visible = false;
+            elective1_courses_datagridview.Visible = false;
+            elective2_courses_datagridview.Visible = false;
+            elective3_courses_datagridview.Visible = false;
+            elective4_courses_datagridview.Visible = false;
         }
+
 
         // Function to recommend courses based on prerequisites and completed courses
         private void RecommendCourses(List<Course> allCourses, List<int> completedCourses, int totalCreditCompleted)
         {
             var completedCoursesSet = new HashSet<int>(completedCourses);
 
-            DataGridView();
+            SetupDataGridViews();
+
+
 
             recomended_courses_panel.Visible = true;
             // Iterate through all courses
@@ -756,14 +844,15 @@ namespace AIUB_Offered_Course
                     continue;
 
                 // Skip "RESEARCH METHODOLOGY" and "CAPSTONE PROJECT" if total credits completed < 100
-                if (((allCourses[i].Name == "RESEARCH METHODOLOGY" && totalCreditCompleted < 100) || (allCourses[i].Name == "CAPSTONE PROJECT 1") && totalCreditCompleted < 105) ||
-                    (allCourses[i].Name == "INTERNSHIP" && totalCreditCompleted < 139))
+                if (((allCourses[i].Name == "RESEARCH METHODOLOGY" && totalCreditCompleted < 100) || (allCourses[i].Name == "INTERNSHIP" && totalCreditCompleted < 139)) // CSE
+                    || (allCourses[i].Name == "CAPSTONE PROJECT 1" && totalCreditCompleted < 105) // EEE
+                    || (departmentNumber == 3 && (allCourses[i].CourseType == 2 || allCourses[i].CourseType== 3) && totalCreditCompleted < 60))
                     continue;
 
                 // Add a new row to DataGridView for recommended course
                 if (allCourses[i].CourseType == 1)
                 {
-                    offered_core_courses_datagridview.Rows.Add
+                    core_courses_datagridview.Rows.Add
                     (
                         $"{j++}. {allCourses[i].Name}", // Display course number and name
                         $"{allCourses[i].CourseCredit}"
@@ -775,7 +864,8 @@ namespace AIUB_Offered_Course
                     // Add a new row to DataGridView for recommended elective course 
                     if (allCourses[i].CourseType == 2)
                     {
-                        major_information_datagridview.Rows.Add(
+                        elective1_courses_datagridview.Rows.Add
+                        (
                             $"{k++}. {allCourses[i].Name}", // Placeholder text for merged cells
                             $"{allCourses[i].CourseCredit}",
                             $"{(CseCourse)allCourses[i].CourseDept}"
@@ -787,7 +877,8 @@ namespace AIUB_Offered_Course
                     // Add a new row to DataGridView for recommended elective course 
                     else if (allCourses[i].CourseType == 3)
                     {
-                        major_software_engineering_datgridview.Rows.Add(
+                        elective2_courses_datagridview.Rows.Add
+                        (
                             $"{l++}. {allCourses[i].Name}", // Placeholder text for merged cells
                             $"{allCourses[i].CourseCredit}",
                             $"{(CseCourse)allCourses[i].CourseDept}"
@@ -798,7 +889,8 @@ namespace AIUB_Offered_Course
                     // Add a new row to DataGridView for recommended elective course 
                     if (allCourses[i].CourseType == 4)
                     {
-                        major_compitutional_theory_datagridview.Rows.Add(
+                        elective3_courses_datagridview.Rows.Add
+                        (
                             $"{m++}. {allCourses[i].Name}", // Placeholder text for merged cells
                             $"{allCourses[i].CourseCredit}",
                             $"{(CseCourse)allCourses[i].CourseDept}"
@@ -809,7 +901,8 @@ namespace AIUB_Offered_Course
                     // Add a new row to DataGridView for recommended elective course 
                     if (allCourses[i].CourseType == 5)
                     {
-                        major_computer_engineering_datagridview.Rows.Add(
+                        elective4_courses_datagridview.Rows.Add
+                        (
                             $"{n++}. {allCourses[i].Name}", // Placeholder text for merged cells
                             $"{allCourses[i].CourseCredit}",
                             $"{(CseCourse)allCourses[i].CourseDept}"
@@ -821,108 +914,129 @@ namespace AIUB_Offered_Course
                 {
                     if (allCourses[i].CourseType == 2)
                     {
-                        eee_elective_courses_datagridview.Rows.Add(
+                        elective1_courses_datagridview.Rows.Add
+                        (
                             $"{k++}. {allCourses[i].Name}", // Placeholder text for merged cells
                             $"{allCourses[i].CourseCredit}"
                         );
                     }
                 }
 
+                else if ( departmentNumber == 3)
+                {
+                    if (allCourses[i].CourseType == 2)
+                    {
+                        elective1_courses_datagridview.Rows.Add
+                        (
+                            $"{k++}. {allCourses[i].Name}", // Placeholder text for merged cells
+                            $"{allCourses[i].CourseCredit}"
+                        );
+                    }
+
+
+
+                    // Add a new row to DataGridView for recommended elective course 
+                    else if (allCourses[i].CourseType == 3)
+                    {
+                        elective2_courses_datagridview.Rows.Add
+                        (
+                            $"{l++}. {allCourses[i].Name}", // Placeholder text for merged cells
+                            $"{allCourses[i].CourseCredit}"
+                        );
+                    }
+                }
+                
             }
 
             AdjustAllDataGridViews();
 
             int electiveCourse = 0;
-            if (offered_core_courses_datagridview.Rows.Count > 0)
+            if (core_courses_datagridview.Rows.Count > 0)
             {
-                offered_core_courses_datagridview.Visible = true;
+                core_courses_datagridview.Visible = true;
                 core_courses_label.Visible = true;
             }
             else
             {
-                offered_core_courses_datagridview.Visible = false;
+                core_courses_datagridview.Visible = false;
                 core_courses_label.Visible = false;
             }
 
             // Check if there are any elective courses
-            if (major_information_datagridview.Rows.Count > 0)
+            if (elective1_courses_datagridview.Rows.Count > 0)
             {
-                electiveCourse = 1;
-                major_information_label.Visible = true;
-                major_information_datagridview.Visible = true;
+                electiveCourse = (departmentNumber != 1) ? 1 : 0;
+                elective1_courses_label.Visible = true;
+                elective1_courses_datagridview.Visible = true;
+                elective1_courses_datagridview.Dock = DockStyle.Top;
             }
             else
             {
-                major_information_label.Visible = false;
-                major_information_datagridview.Visible = false;
+                elective1_courses_label.Visible = false;
+                elective1_courses_datagridview.Visible = false;
             }
 
-            if (major_software_engineering_datgridview.Rows.Count > 0)
+            if (elective2_courses_datagridview.Rows.Count > 0)
             {
                 electiveCourse = 1;
-                major_software_engineering_label.Visible = true;
-                major_software_engineering_datgridview.Visible = true;
+                elective2_courses_label.Visible = true;
+                elective2_courses_datagridview.Visible = true;
+                elective2_courses_datagridview.Dock = DockStyle.Top;
             }
             else
             {
-                major_software_engineering_label.Visible = false;
-                major_software_engineering_datgridview.Visible = false;
+                elective2_courses_label.Visible = false;
+                elective2_courses_datagridview.Visible = false;
             }
 
-            if (major_compitutional_theory_datagridview.Rows.Count > 0)
+            if (elective3_courses_datagridview.Rows.Count > 0)
             {
                 electiveCourse = 1;
-                major_compitutional_theory_label.Visible = true;
-                major_compitutional_theory_datagridview.Visible = true;
+                elective3_courses_label.Visible = true;
+                elective3_courses_datagridview.Visible = true;
+                elective3_courses_datagridview.Dock = DockStyle.Top;
             }
             else
             {
-                major_compitutional_theory_datagridview.Visible = false;
-                major_compitutional_theory_label.Visible = false;
+                elective3_courses_datagridview.Visible = false;
+                elective3_courses_label.Visible = false;
             }
 
-            if (major_computer_engineering_datagridview.Rows.Count > 0)
+            if (elective4_courses_datagridview.Rows.Count > 0)
             {
                 electiveCourse = 1;
-                major_computer_engineering_label.Visible = true;
-                major_computer_engineering_datagridview.Visible = true;
+                elective4_courses_label.Visible = true;
+                elective4_courses_datagridview.Visible = true;
+                elective4_courses_datagridview.Dock = DockStyle.Top;
             }
             else
             {
-                major_computer_engineering_label.Visible = false;
-                major_computer_engineering_datagridview.Visible = false;
+                elective4_courses_label.Visible = false;
+                elective4_courses_datagridview.Visible = false;
             }
 
-            if (eee_elective_courses_datagridview.Rows.Count > 0)
-            {
-                eee_elective_courses_datagridview.Visible = true;
-                electiveCourse = 1;
-            }
-            else
-                eee_elective_courses_datagridview.Visible = false;
 
+            
             elective_courses_label.Visible = (electiveCourse == 1) ? true : false;
 
 
             // Refresh the DataGridView to reflect changes
-            offered_core_courses_datagridview.Refresh();
-            major_information_datagridview.Refresh();
-            major_software_engineering_datgridview.Refresh();
-            major_compitutional_theory_datagridview.Refresh();
-            major_computer_engineering_datagridview.Refresh();
-            major_information_datagridview.Refresh();
-            eee_elective_courses_datagridview.Refresh();
+            core_courses_datagridview.Refresh();
+            elective1_courses_datagridview.Refresh();
+            elective2_courses_datagridview.Refresh();
+            elective3_courses_datagridview.Refresh();
+            elective4_courses_datagridview.Refresh();
+            elective1_courses_datagridview.Refresh();
 
         }
 
         private void AdjustAllDataGridViews()
         {
-            AdjustDataGridViewHeight(offered_core_courses_datagridview);
-            AdjustDataGridViewHeight(major_information_datagridview);
-            AdjustDataGridViewHeight(major_software_engineering_datgridview);
-            AdjustDataGridViewHeight(major_compitutional_theory_datagridview);
-            AdjustDataGridViewHeight(major_computer_engineering_datagridview);
-            AdjustDataGridViewHeight(eee_elective_courses_datagridview);
+            AdjustDataGridViewHeight(core_courses_datagridview);
+            AdjustDataGridViewHeight(elective1_courses_datagridview);
+            AdjustDataGridViewHeight(elective2_courses_datagridview);
+            AdjustDataGridViewHeight(elective3_courses_datagridview);
+            AdjustDataGridViewHeight(elective4_courses_datagridview);
         }
         private void AdjustDataGridViewHeight(DataGridView dataGridView)
         {
