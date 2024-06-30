@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -410,7 +411,210 @@ namespace AIUB_Offered_Course
                                             new Course { Name = "Internship", Prerequisites = new HashSet<int>(), CourseCredit = 3, CourseType = 1}, // After Completion of 132 Cr.
 
 
-                                         };
+
+                                            // Accounting (ACT) - Prerequisite: BBA 3126 Financial Management (For All Elective Courses)
+                                            new Course { Name = "Intermediate Accounting", Prerequisites = new HashSet<int> {26}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Cost Accounting", Prerequisites = new HashSet<int> {26}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Financial Statement Analysis", Prerequisites = new HashSet<int> {26}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Accounting Information Systems", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Auditing", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Financial and Corporate Reporting", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Advanced Cost Accounting", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Advanced Financial Accounting", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Strategic Management Accounting", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Accounting Theory and Policy", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Accounting for Specialized Institutions", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+                                            new Course { Name = "Corporate Finance", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 2},
+
+                                            // Business Analytics (BA) - Prerequisite: BBA 2117 Office Management Technology (For All Elective Courses)
+                                            new Course { Name = "Analytics for Business Professionals", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Technology Adoption Theories and Models", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Visualization and Communication of Business Data", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Analytics for Sports Management", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Legal and Ethical Issues in Data Management", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Analyzing Exploratory Data in Business", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Analytics for Healthcare and Medical Industries", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Data and Web Analytics", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Financial Analytics", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Retail Analytics", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Analytics for Talent Management", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Seminar (Business Analytics)", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Capstone Project (Business Analytics)", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Database Analysis and Design", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Object Oriented Programming", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Data Warehouse and Data Mining", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Social Media and Digital Marketing", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+                                            new Course { Name = "Supply Chain Analytics", Prerequisites = new HashSet<int> {2117}, CourseCredit = 3, CourseType = 3},
+
+
+                                            // Business Economics (BECO) - Prerequisite: BBA 2222 Macro Economics (For All Elective Courses)
+                                            new Course { Name = "Microeconomic Theory", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Macroeconomics of Developing Countries", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Mathematical Economics", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Applied Econometric Models", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Development Economics", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Political Economy", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Economics of Natural Resources and Environment", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Comparative Economic Analysis", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Bangladesh Economy", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Introduction to Game Theory", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Labor Economics", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+                                            new Course { Name = "Health Economics", Prerequisites = new HashSet<int> {2222}, CourseCredit = 3, CourseType = 4},
+
+                                            // Finance (FIN) - Prerequisite: BBA 3126 Financial Management (For All Elective Courses)
+                                            new Course { Name = "Corporate Finance", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Financial Institutions and Markets", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Investment Analysis and Portfolio Management", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Capital Budgeting", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Bank Fund Management", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Working Capital Management", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Islamic Finance and Banking", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Global Finance", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Financial Derivatives", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Comprehensive Financial Case Analysis", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+                                            new Course { Name = "Financial Statement Analysis", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 5},
+
+                                            // Human Resource Management (HRM) - Prerequisite: BBA 3125 Human Resource Management (For All Elective Courses)
+                                            new Course { Name = "Human Resource Planning and Forecasting", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Performance Appraisal and Management", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Selection and Staffing", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Training and Development", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Labor Law of Bangladesh", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Compensation and Benefit Management", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Industrial Relations Management", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Human Resource Information System (HRIS)", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Human Resource in Global Business Environment", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Occupational Health and Safety Management", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Organizational Theory and Development", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+                                            new Course { Name = "Strategic Human Resource Management", Prerequisites = new HashSet<int> {3125}, CourseCredit = 3, CourseType = 6},
+
+                                            // Innovation and Entrepreneurship Development (IED) - Prerequisite: BBA 3234 Innovation and Entrepreneurship Development (For All Elective Courses)
+                                            new Course { Name = "Entrepreneurial Mindset and Behavior", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Accounting for Entrepreneurs", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "New Venture Development", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Entrepreneurial Finance", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Economics for the Entrepreneurs", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Consumer Behavior and Digital Marketing", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "E-commerce", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Marketing Research for Entrepreneurs", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Business Risk Management", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Enterprise Resource Planning", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+                                            new Course { Name = "Business Intelligence and Decision Support System", Prerequisites = new HashSet<int> {3234}, CourseCredit = 3, CourseType = 7},
+
+                                            // International Business (IB) - Prerequisite: BBA 3130 International Business (For All Elective Courses)
+                                            new Course { Name = "International Banking", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Global Business Strategy", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "International Enterprises and Transactions", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "International Business Governance, Ethics and Law", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Development Economics", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Labor Economics", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Global Finance", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Human Resource in Global Business Environment", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Negotiation Theory and Practice", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Enterprise Resource Planning", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "International Marketing", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+                                            new Course { Name = "Logistics Management", Prerequisites = new HashSet<int> {3130}, CourseCredit = 3, CourseType = 8},
+
+                                            // Investment Management (IM) - Prerequisite: BBA 3126 Financial Management (For All Elective Courses)
+                                            new Course { Name = "Regulations and Investment", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Doing Business in Bangladesh", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Macroeconomic Conditions for Investment", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Economics and Law", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Business Risk Management", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Development Economics", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Labor Economics", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Financial Institutions and Markets", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Investment Analysis and Portfolio Management", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Global Finance", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Financial Derivatives", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Agri-business Management", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+                                            new Course { Name = "Negotiation Theory and Practice", Prerequisites = new HashSet<int> {3126}, CourseCredit = 3, CourseType = 9},
+
+                                            // Management (MGT)
+                                            new Course { Name = "Management of Change and Technology", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Public Sector Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Environment Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Managing of NGOs and Small Business", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Cooperative Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Disaster Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Agri-business Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Negotiation Theory and Practice", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Labor Law of Bangladesh", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Industrial Relations Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Occupational Health and Safety Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Organization Theory and Development", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Global Business Strategy", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Inventory Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+                                            new Course { Name = "Hospitality Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 10},
+
+
+                                            // Management Information Systems (MIS)
+                                            new Course { Name = "Enterprise Resource Planning", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Database Analysis and Design", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Object Oriented Programming", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Digital Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Data Warehouse and Data Mining", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Business Intelligence and Decision Support System", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Special Topic in MIS", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Web Technology", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Business Graphics and Animation", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Network Resource Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "E-Commerce and E-Governance", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Introduction to Data Science", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Cyber Security", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+                                            new Course { Name = "Blockchain Technologies in Business", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 11},
+
+
+                                            // MKT
+                                            new Course { Name = "Consumer Behavior", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Integrated Marketing Communication", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Social Media and Digital Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Services Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Sales Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "International Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Distribution and Channel Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Brand and Product Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Rural Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Agro-based Product Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Marketing Strategy", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Marketing Research", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Product Innovation and Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+                                            new Course { Name = "Tourism and Hospitality Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 12},
+
+
+                                            // Tourism and Hospitality Management (THM)
+                                            new Course { Name = "Introduction to Tourism and Hospitality Industry", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Tourism and Hospitality Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Housekeeping Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Recreation Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Tourism and Hospitality Law", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Travel Agency and Tour Operation Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Event and MICE (Meeting, Incentives, Convention and Exhibitions) Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Airline Reservation and Ticketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Food and Beverage Service Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Destination Planning and Development", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Hospitality Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Consumer Behavior", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Services Marketing", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Marketing Strategy", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+                                            new Course { Name = "Marketing Research", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 13},
+
+
+                                            // Operations and Supply Chain Management (OSCM)
+                                            new Course { Name = "Advanced Supply Chain Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Inventory Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Sourcing and Negotiation", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Logistics Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Managerial Forecasting", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Purchasing and Procurement", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Supply Chain Analytics", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Service Operations Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Total Quality Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Product Strategy Management", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Enterprise Resource Planning", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+                                            new Course { Name = "Blockchain Technologies in Business", Prerequisites = new HashSet<int> {}, CourseCredit = 3, CourseType = 14},
+
+            };
         }
     }
 }
