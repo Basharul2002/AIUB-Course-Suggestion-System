@@ -1014,7 +1014,8 @@ namespace AIUB_Offered_Course
             "None",
             "CSE",
             "EEE",
-            "ENG"});
+            "ENG",
+            "BBA"});
             this.department_combobox.Location = new System.Drawing.Point(198, 92);
             this.department_combobox.Margin = new System.Windows.Forms.Padding(0);
             this.department_combobox.Name = "department_combobox";
