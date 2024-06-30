@@ -73,7 +73,7 @@ namespace AIUB_Offered_Course
             else if (departmentNumber == 3)
                 PrintCourses(CourseManager.EnglishCourses());
             else if (departmentNumber == 4)
-                PrintCourses(CourseManager.BBACourses());
+                PrintCourses(CourseManager.BBACourses()); 
         }
 
         // For comeback department choosing another panel 
@@ -201,11 +201,11 @@ namespace AIUB_Offered_Course
 
                 course_heading_label.Text = $"Total credit completed: {totalCreditCompleted} \t\nRecommended courses you can take next semester";
 
-                RecommendCourses(allCourses, completedCourses, totalCreditCompleted);
+                RecommendCourses(completedCourses, totalCreditCompleted);
             }
             catch (Exception ex)
             {
-               // MessageBox.Show($"Function name is CourseDataUserInput and error: {ex.Message}");
+                MessageBox.Show($"Function name is CourseDataUserInput and error: {ex.Message}");
                 course_number_warning_label.Text = "Duplicate Course IDs are Not Allowed";
                 course_number_warning_label.Visible = true;
             }
@@ -331,7 +331,7 @@ namespace AIUB_Offered_Course
 
         private bool IsValidCourseNumber(int number, int dept)
         {
-            return (dept == 1 && number <= 99) || (dept == 2 && number <= 74) || (dept == 3 && number <= 67) || (dept == 4 && number <= 39);
+            return (dept == 1 && number <= 99) || (dept == 2 && number <= 74) || (dept == 3 && number <= 67) || (dept == 4 && number <= 211);
         }
 
         // Validate prerequisites for each inputted course
@@ -369,28 +369,44 @@ namespace AIUB_Offered_Course
         }
 
 
-        private void SetupDataGridViews()
+        private void SetupElectiveDataGridViews()
         {
             // Clear existing rows and columns in DataGridViews
             ClearDataGridViews();
-
-            if (departmentNumber == 1)
+  
+            if (departmentNumber == 1) // CSE (3 Major)
             {
                 SetupDataGridView(elective1_courses_datagridview, "<b>Major in Information</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
                 SetupDataGridView(elective2_courses_datagridview, "<b>Major in Software Engineering</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
                 SetupDataGridView(elective3_courses_datagridview, "<b>Major in Computational Theory</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
                 SetupDataGridView(elective4_courses_datagridview, "<b>Major in Computer Engineering</b>", new int[] { 326, 58, 91 }, DataGridViewContentAlignment.MiddleCenter);
             }
-            else if (departmentNumber == 2)
+            else if (departmentNumber == 2)  // EEE (1 Major)
                 SetupDataGridView(elective1_courses_datagridview, "", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
             
-            else if (departmentNumber == 3)
+            else if (departmentNumber == 3) // English (2 Major)
             {
                 SetupDataGridView(elective1_courses_datagridview, "<b>Major in Linguistics & TESL</b>  <br>First Major: Complete any 10 courses in Linguistics & TESL <br> Second Major: Complete any 6 courses in Linguistics & TESL <br>Minor: Complete any FOUR 4 courses in Linguistics & TESL", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
                 SetupDataGridView(elective2_courses_datagridview, "<b>Major In Literature</b> <br>First Major: Complete any 10 courses in Literature <br> Second Major: Complete any 6 courses in Literature <br>Minor: Complete any FOUR 4 courses in Literature", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
             }
 
-            
+            else if (departmentNumber == 4) // BBA (7 major)
+            {
+                SetupDataGridView(elective1_courses_datagridview, "<b>Major in ACCOUNTING</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective2_courses_datagridview, "<b>Major In BUSINESS ANALYTICS (BA)</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective3_courses_datagridview, "<b>Major in BUSINESS ECONOMICS (BECO)</b>", new int[] {417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective4_courses_datagridview, "<b>Major In FINANCE (FIN)</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+
+                // add others bba major
+                /*
+                SetupDataGridView(elective5_courses_datagridview, "<b>Major in ACCOUNTING</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective6_courses_datagridview, "<b>Major In BUSINESS ANALYTICS (BA)</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective7_courses_datagridview, "<b>Major in BUSINESS ECONOMICS (BECO)</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+                SetupDataGridView(elective8_courses_datagridview, "<b>Major In FINANCE (FIN)</b>", new int[] { 417, 58 }, DataGridViewContentAlignment.MiddleCenter);
+
+                */
+            }
+
             HideAllDataGridViews();
         }
 
@@ -401,6 +417,7 @@ namespace AIUB_Offered_Course
             elective2_courses_datagridview.Columns.Clear();
             elective3_courses_datagridview.Columns.Clear();
             elective4_courses_datagridview.Columns.Clear();
+
             elective1_courses_datagridview.Rows.Clear();
             elective2_courses_datagridview.Rows.Clear();
             elective3_courses_datagridview.Rows.Clear();
@@ -431,9 +448,8 @@ namespace AIUB_Offered_Course
 
             // Set header alignment
             foreach (DataGridViewColumn column in dgv.Columns)
-            {
                 column.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            }
+            
 
             // Set the label text
             if (dgv == elective1_courses_datagridview)
@@ -476,15 +492,13 @@ namespace AIUB_Offered_Course
 
 
         // Function to recommend courses based on prerequisites and completed courses
-        private void RecommendCourses(List<Course> allCourses, List<int> completedCourses, int totalCreditCompleted)
+        private void RecommendCourses(List<int> completedCourses, int totalCreditCompleted)
         {
             var completedCoursesSet = new HashSet<int>(completedCourses);
 
-            SetupDataGridViews();
-
-
-
+            SetupElectiveDataGridViews();
             recomended_courses_panel.Visible = true;
+
             // Iterate through all courses
             for (int i = 0, j = 1, k = 1, l = 1, m = 1, n = 1; i < allCourses.Count; i++)
             {
@@ -498,12 +512,15 @@ namespace AIUB_Offered_Course
                 if (!prerequisites.All(prereq => completedCoursesSet.Contains(prereq)))
                     continue;
 
+                // MessageBox.Show(allCourses[i].CourseType.ToString());
+
+
                 // Skip "RESEARCH METHODOLOGY" and "CAPSTONE PROJECT" if total credits completed < 100
                 if (((allCourses[i].Name == "RESEARCH METHODOLOGY" && totalCreditCompleted < 100) || (allCourses[i].Name == "INTERNSHIP" && totalCreditCompleted < 139)) // CSE
                     || (allCourses[i].Name == "CAPSTONE PROJECT 1" && totalCreditCompleted < 105) // EEE
-                    || (departmentNumber == 3 && (allCourses[i].CourseType == 2 || allCourses[i].CourseType== 3) && totalCreditCompleted < 60)
-                    || (departmentNumber == 4 && totalCreditCompleted < 137)) // BBA
+                    || (departmentNumber == 3 && (allCourses[i].CourseType == 2 || allCourses[i].CourseType== 3) && totalCreditCompleted < 60))
                     continue;
+
 
                 // Add a new row to DataGridView for recommended course
                 if (allCourses[i].CourseType == 1)
@@ -601,11 +618,58 @@ namespace AIUB_Offered_Course
                         );
                     }
                 }
-                
+
+
+                else if (departmentNumber == 4)
+                {
+                    if (allCourses[i].CourseType == 2)
+                    {
+                        elective1_courses_datagridview.Rows.Add
+                        (
+                            $"{k++}. {allCourses[i].Name}", // Placeholder text for merged cells
+                            $"{allCourses[i].CourseCredit}"
+                        );
+                    }
+
+
+
+                    // Add a new row to DataGridView for recommended elective course 
+                    else if (allCourses[i].CourseType == 3)
+                    {
+                        elective2_courses_datagridview.Rows.Add
+                        (
+                            $"{l++}. {allCourses[i].Name}", // Placeholder text for merged cells
+                            $"{allCourses[i].CourseCredit}"
+                        );
+                    }
+
+                    // Add a new row to DataGridView for recommended elective course 
+                    if (allCourses[i].CourseType == 4)
+                    {
+                        elective3_courses_datagridview.Rows.Add
+                        (
+                            $"{m++}. {allCourses[i].Name}", // Placeholder text for merged cells
+                            $"{allCourses[i].CourseCredit}",
+                            $"{(CseCourse)allCourses[i].CourseDept}"
+                        );
+                    }
+
+
+                    // Add a new row to DataGridView for recommended elective course 
+                    if (allCourses[i].CourseType == 5)
+                    {
+                        elective4_courses_datagridview.Rows.Add
+                        (
+                            $"{n++}. {allCourses[i].Name}", // Placeholder text for merged cells
+                            $"{allCourses[i].CourseCredit}",
+                            $"{(CseCourse)allCourses[i].CourseDept}"
+                        );
+                    }
+                }
             }
 
             AdjustAllDataGridViews();
-
+            
             int electiveCourse = 0;
             if (core_courses_datagridview.Rows.Count > 0)
             {
@@ -682,8 +746,6 @@ namespace AIUB_Offered_Course
             elective2_courses_datagridview.Refresh();
             elective3_courses_datagridview.Refresh();
             elective4_courses_datagridview.Refresh();
-            elective1_courses_datagridview.Refresh();
-
         }
 
         private void AdjustAllDataGridViews()
